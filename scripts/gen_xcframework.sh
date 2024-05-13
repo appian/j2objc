@@ -38,7 +38,6 @@ CMD="xcodebuild -create-xcframework -output "${FRAMEWORK_DIR}
 while test ${#} -gt 0
 do
   CMD=${CMD}" -library "$1
-  CMD=${CMD}" -headers "$FRAMEWORK_HEADERS_DIR
   shift
 done
 echo $CMD

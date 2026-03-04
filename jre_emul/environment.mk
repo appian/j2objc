@@ -154,7 +154,7 @@ endif
 
 # The -fobjc flags match XCode (a link fails without them because of
 # missing symbols of the form OBJC_CLASS_$_[classname]).
-OBJCFLAGS += $(WARNINGS) -fno-strict-overflow \
+OBJCFLAGS += $(WARNINGS) -fno-strict-overflow -fobjc-weak \
   -fobjc-abi-version=2 -fobjc-legacy-dispatch $(DEBUGFLAGS) \
   -I/System/Library/Frameworks/ExceptionHandling.framework/Headers \
   -I/System/Library/Frameworks/Security.framework/Headers \
